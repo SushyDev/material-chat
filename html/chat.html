@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../css/chat.css">
+<script src="./js/messaging/server.js" defer></script>
+<script src="./js/messaging/client.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js?spm=a2c6h.14275010.0.0.6f4712e7c9Eym9&file=socket.io.js"></script>
+  
+<script>
+  var socket = io();
+  socket.on('connect', function(){});
+  socket.on('event', function(data){});
+  socket.on('disconnect', function(){});
+</script>
+
+
+<div class="content chat" id="chat">
+
+    <div class="chat-content">
+
+    </div>
+
+    <div class="message-area">
+
+        <label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+            <span class="mdc-text-field__ripple"></span>
+            <input class="mdc-text-field__input" type="text" placeholder="Message" aria-label="Label" id="message-content">
+            <span class="mdc-line-ripple"></span>
+        </label>
+
+        <button class="mdc-icon-button material-icons" onclick="sendMessage()">send</button>
+
+    </div>
+</div>
+
+<script>
+    window.mdc.autoInit();
+</script>
