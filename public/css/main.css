@@ -1,0 +1,41 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    background: var(--body-color)
+}
+
+*:focus {
+    outline: none;
+}
+
+.main {
+    position: fixed;
+    background: var(--body-color);
+    top: 64px;
+    min-height: calc(100% - 64px);
+    width: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.account {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}

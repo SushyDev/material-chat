@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --primary-color: #71E3F4;
+    --primary-hover: #FFA8FD;
+    --body-color: #ffffff;
+    --color: #000000;
+    --btn-color: #2e2e2e;
+    --nav-bg: #ececec;
+    --nav-item-hover: #cccccc;
+    --nav-item-color: #404040;
+    --slider-color: #212121;
+}
+
+[data-theme="dark"] {
+    --primary-color: #71E3F4;
+    --primary-hover: #FFA8FD;
+    --body-color: #121212;
+    --color: #ffffff;
+    --btn-color: #202020;
+    --nav-bg: #1D1D1D; 
+    --nav-item-hover: #505050;
+    --nav-item-color: #ffffff;
+    --slider-color: #ffffff
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    width: 125px;
+    color: var(--btn-color);
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all ease 100ms;
+    padding: 5px;
+    margin: 12.5px;
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn span {
+    padding: 0;
+    margin: 0;
+    margin-right: 2.5px;
+}

@@ -1,0 +1,53 @@
+.message {
+    display: flex;
+    margin: 10px;
+}
+
+.sent {
+    justify-content: flex-end;
+}
+
+.message .message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sent .message-container {
+    align-items: flex-end;
+}
+
+.message .content {
+    background: var(--primary-hover);
+    height: fit-content;
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.sent .content {
+    background: var(--primary-color);
+    border-radius: 5px 0px 5px 5px;
+}
+
+.message .name {
+    background: var(--primary-color);
+    height: fit-content;
+    width: fit-content;
+    margin: 5px 10px;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 5px 5px 5px 0px;
+}
+
+.sent .name {
+    background: var(--primary-hover);
+    border-radius: 5px 5px 0px 5px;
+}
+
+.message .icon img {
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    margin-top: 2.5px;
+    background: var(--nav-bg)
+}

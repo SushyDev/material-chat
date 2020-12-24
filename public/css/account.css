@@ -1,0 +1,35 @@
+.account {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    height: fit-content;
+    width: 100%;
+}
+
+.account .pfp {
+    width: 128px;
+    height: 128px;
+    border-radius: 20px;
+}
+
+.account div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.account div p {
+    color: var(--color);
+    height: 42px;
+    margin: 0;
+}
+
+.account div button {
+    height: 32px;
+    width: fit-content;
+    border: none;
+    margin: 0;
+    margin-top: 20px;
+}

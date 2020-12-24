@@ -1,5 +1,4 @@
 var input = document.getElementById("message-content")
-console.log(input)
 input.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
         sendMessage()
@@ -7,7 +6,6 @@ input.addEventListener("keydown", function (e) {
 });
 
 function sendMessage() {
-    console.log("client")
     var profile = JSON.parse(localStorage.getItem("profile"));
     var username = profile[0].username
     var localUser = profile[0].id;
