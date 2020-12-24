@@ -11,17 +11,22 @@ function onSignIn(googleUser) {
     ]
 
     localStorage.setItem('profile', JSON.stringify(profileData))
-    console.log(profileData)
 
     // The ID token you need to pass to your backend:
     var id_token = googleUser.getAuthResponse().id_token;
 
-    //Goto chat page
-    goto('chat')
+    //Hide overlay
+    document.getElementById("main").style.display = "none"
+    document.getElementById("main").innerHTML = ""
   }
 
   var profile = JSON.parse(localStorage.getItem("profile"));
   //If no profile is found
   if(profile == null) {
-      goto('login')
+      //Display overlay and show login page on it
+      document.getElementById("main").style.display = "flex"
+      $(function(){
+        $("#main").load('./html/'+'login'+".html");
+      });
   }
+

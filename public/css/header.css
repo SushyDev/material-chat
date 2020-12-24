@@ -1,0 +1,37 @@
+.header {
+    width: 100vw;
+    height: 64px;
+    background: var(--primary-color);
+    display: flex;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    z-index: 10;
+}
+
+.header .drawer-btn {
+    height: 100%;
+    display: flex;
+    width: 64px;
+    align-items: center;
+    justify-content: center;
+}
+
+.drawer-btn button {
+    border: none;
+    background: none;
+    width: 100%;
+    color: white
+}
+
+.drawer-btn button:active {
+    color: var(--primary-hover);
+}
+
+.header .title {
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}

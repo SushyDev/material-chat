@@ -1,0 +1,8 @@
+.signin {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
